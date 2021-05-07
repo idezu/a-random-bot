@@ -7,7 +7,7 @@ If you wish to add the bot to your own server, [**click here!**]()(soon)
 ![RoboLiam Banner](./logo...exr.png)
 
 # How do I use this thing?
-The default prefix is `//`. To see the commands, say `//help`!
+The default prefix is `//`. To see all the commands, say `//help`!
 
 # I found a bug!
 it's my first project so i don't know everything in js, it's maybe better to search on internet and submit the patch

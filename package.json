@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "discord.js": "^12.5.3",
+    "fs": "^0.0.1-security",
+    "long": "^4.0.0"
+  },
+  "name": "a-random-beta",
+  "description": "this is a beta...",
+  "version": "0.0.1",
+  "main": "index.js",
+  "scripts": {
+    "test": "ping.js"
+  },
+  "author": "idezu",
+  "license": "CeCILL and licence file"
+}

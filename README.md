@@ -1,2 +1,1 @@
-# a random bot
- a random bot for discord
+some code from Roboliam by Controlfreak707

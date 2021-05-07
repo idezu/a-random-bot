@@ -2,19 +2,17 @@ some code from Roboliam by Controlfreak707
  
 If you wish to add the bot to your own server, [**click here!**]()(soon)
 
-### RoboLiam is a bot with all the tools you need to moderate a server along with tons of commands to keep your community entertained!
+### it's a test for a multifouncionnal bot to moderate, play music, do some cool thing but some of this feature will not go soon!
 
-![RoboLiam Banner]()
+![RoboLiam Banner](./logo...exr.png)
 
 # How do I use this thing?
-The default prefix is `.`, however you can easily change the prefix with `.prefix [new prefix]`. If you forget the prefix, just `@mention` RoboLiam and you'll get the server prefix. To see the commands, say `.help` or if you'd like, you can say `.cmds`! Many of RoboLiam's commands have aliases so you don't have to step out of your confort zone!
+The default prefix is `//`**, however you can easily change the prefix with `//prefix [new prefix]`**. To see the commands, say `//help`!
 
 # I found a bug!
-If you come across a bug or need support in general, [join the support server](https://discord.gg/fssWDHY5Kb). An invite to the support server is listed above.
+it's my first project so i don't know everything in js, it's maybe better to search on internet and submit the patch
 
 # I've got an idea!
-You have an idea for a new command or feature? GREAT! Similar to if you find a bug, [join the support server](https://discord.gg/fssWDHY5Kb) and tell the developers! We'd be more than happy to listen to what you have to say.
-
-###### Credit to [Noba](https://www.reddit.com/user/N0ba/) on Reddit for the Protogen Avatar.
+you can tell it to me but it''s not sure that the next update is for that.
 
 licenced as mainly in CeCILL

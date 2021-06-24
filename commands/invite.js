@@ -4,8 +4,10 @@ const config = require("../../config.json");
 
 
 module.exports.run = async(client,msg,args)=>{
-    let invite = new Discord.Invite
+   /* let invite = new Discord.Invite
     msg.channel.send(invite)
+    */
+   msg.chnnale.send("soon")
 }
 
 module.exports.help={

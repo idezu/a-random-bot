@@ -1,5 +1,14 @@
 const Discord = require('discord.js');
 const config = require("../config.json");
+/* the config file look like
+ 
+{
+    "token" : "your token"
+    "prefix" : "your prefix"
+}
+
+you have to create it
+*/
 const fs = require("fs");
 const client = new Discord.Client();
 client.commands = new Discord.Collection()
@@ -50,6 +59,7 @@ client.on("ready", () => {
     },
   ];
   let random = status[Math.floor(Math.random() * Math.floor(status.length))];
+  // for a randoms status
   client.user.setActivity(random.activity, {
     type: random.type,
   });
@@ -57,18 +67,13 @@ client.on("ready", () => {
 
 client.on('message', (msg) => { 
   
-  
-  if(msg.author.client) 
-  {
-    return;
-  }
-  
   if(msg.channel.type === "dm") 
   {
     return;
   }
+  console.log("the message is in an server")
 
-  var messagegArray = msg.content.split(" ");
+  var msgArray = msg.content.split(" ");
   var command = msgArray[0];
   var args = msgArray.slice(1)
   var commands = client.commands.get(command.slice(prefix.length))
@@ -77,13 +82,17 @@ client.on('message', (msg) => {
      msg.content == `<@!${client.user.id}>`
                                                   )
   {
-    help.run
+    var commands = client.commands.get("help")
+    commands.run(client,msg,args)
+    return;
   }
   
   if(commands)
   { 
     commands.run(client, msg, args);
+    console.log("the message has been treated")
   }
+  
 })
 
 client.on('guildMemberAdd', member => {

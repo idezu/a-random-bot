@@ -1,11 +1,18 @@
 const Discord = require("discord.js");
 
 module.exports.run = async(client,msg,args)=>{
-    const embed = {
+      /*if (args == "")
+      {
+         msg.channel.send("you have to enter parameter")
+         return;
+      }
+   const embed = {
       color: 3447003,
       description: args
       }
       msg.channel.send({embed});
+      */
+     msg.channel.send("soon")
 }
 
 module.exports.help={

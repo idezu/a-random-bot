@@ -5,7 +5,7 @@ module.exports.run = async(client,msg,args)=>{
         let member = msg.mentions.members.first(); 
         let reason = args.slice(1).join(" ");
         
-        member.ban(reason);
+        member.kick(reason);
         msg.channel.send(":white_check_mark: " + member.displayName + " has been kicked!")
         console.log(msg.author.tag + " has kicked " + member.displayName + " (" + member + ") from the server " + msg.guild.name) 
     }

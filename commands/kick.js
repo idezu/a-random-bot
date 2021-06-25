@@ -3,6 +3,12 @@ const Discord = require("discord.js");
 module.exports.run = async(client,msg,args)=>{
     if (msg.member.hasPermission("KICK_MEMBERS")) {
         let member = msg.mentions.members.first(); 
+
+        if (member ==null)
+        {
+            msg.channel.send(":x: Must be a member to kick!")
+            return;
+        }
         let reason = args.slice(1).join(" ");
         
         member.kick(reason);

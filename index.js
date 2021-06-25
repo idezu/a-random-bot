@@ -10,6 +10,7 @@ const config = require("../config.json");
 you have to create it
 */
 const fs = require("fs");
+const { error } = require('console');
 const client = new Discord.Client();
 client.commands = new Discord.Collection()
 var prefix = config.prefix;
@@ -94,6 +95,10 @@ client.on('message', (msg) => {
   { 
     commands.run(client, msg, args);
     console.log("the message has been treated")
+    if (error)
+    {
+        console.log(error)
+    }
   }
   
 })

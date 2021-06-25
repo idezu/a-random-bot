@@ -3,9 +3,9 @@ const Discord = require("discord.js");
 module.exports.run = async(client,msg,args)=>{
     if (msg.member.hasPermission("BAN_MEMBERS")) { 
     let member = msg.mentions.members.first();
-    if (member == "")
+    if (member == null)
     {
-        msg.channel.send("it would have a member to ban")
+        msg.channel.send(":x: Must be a member to ban!")
         return;
     }
     

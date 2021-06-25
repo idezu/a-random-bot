@@ -5,13 +5,15 @@ module.exports.run = async(client,msg,args)=>{
         let member = msg.mentions.members.first();
         if (member == "")
         {
-                let emb=new Discord.MessageEmbed().setImage(member.displayAvatarURL()).setTitle(member.username)
+                const emb=new Discord.MessageEmbed().setImage(member.displayAvatarURL()).setTitle(member.username)
+                msg.channel.send(emb)
         }
         else
         {
-                let emb=new Discord.MessageEmbed().setImage(msg.author.displayAvatarURL()).setTitle(msg.author.username)
+                const emb=new Discord.MessageEmbed().setImage(msg.author.displayAvatarURL()).setTitle(msg.author.username)
+                msg.channel.send(emb)
         }
-        msg.channel.send(emb)
+        
  
 }
 

@@ -57,6 +57,10 @@ client.on("ready", () => {
       activity: "Furry YouTubers...",
       type: "WATCHING",
     },
+    {
+      activity: "beta !!!!!!!!!!!!!",
+      type: "LISTENING",
+    }
   ];
   let random = status[Math.floor(Math.random() * Math.floor(status.length))];
   // for a randoms status
@@ -71,20 +75,19 @@ client.on('message', (msg) => {
   {
     return;
   }
-  console.log("the message is in an server")
+  console.log("the message is in a server")
 
   var msgArray = msg.content.split(" ");
   var command = msgArray[0];
   var args = msgArray.slice(1)
   var commands = client.commands.get(command.slice(prefix.length))
 
+
   if(msg.content == `<@${client.user.id}>` ||
      msg.content == `<@!${client.user.id}>`
                                                   )
   {
     var commands = client.commands.get("help")
-    commands.run(client,msg,args)
-    return;
   }
   
   if(commands)

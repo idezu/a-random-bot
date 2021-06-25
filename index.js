@@ -28,7 +28,7 @@ fs.readdir("./commands/", (err, files) =>{
       var fileGet = require("./commands/" + f);
       console.log("File command " + f + " successfully recovered !")
       client.commands.set(fileGet.help.name, fileGet)
-  });
+    });
 });
 
 client.on("ready", () => {
@@ -85,19 +85,24 @@ client.on('message', (msg) => {
 
 
   if(msg.content == `<@${client.user.id}>` ||
-     msg.content == `<@!${client.user.id}>`
+     msg.content == `<@!${client.user.id}>`|| msg.content == "?" 
                                                   )
   {
     var commands = client.commands.get("help")
   }
-  
-  if(commands)
+//exocommand usage
+  if (command == prefix+"usage")
+  {
+    var commands = client.commands.get(args)
+    msg.channel.send(commands.help.description(), commands.help.usage())
+  }  
+  else if (commands)
   { 
     commands.run(client, msg, args);
     console.log("the message has been treated")
     if (error)
     {
-        console.log(error)
+        console.log(console.error)
     }
   }
   

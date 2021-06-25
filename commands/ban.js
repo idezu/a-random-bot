@@ -12,10 +12,9 @@ module.exports.run = async(client,msg,args)=>{
     let reason = args.slice(1).join(" ");
     member.ban(reason);
     msg.channel.send(":white_check_mark: " + member.displayName + " the ban hammer has spoken!!!!  \nreason : "+ args) 
-    console.log(msg.author.tag + "has banned " + member.displayName + " (" + member + ") of the server " + msg.guild.name) 
 }   else { 
     msg.channel.send (":x: You do not have permission to ban a user.")
-    console.log (msg.author.tag + "wanted to ban a user on the server" + msg.guild.name + ", but he did not have permission to ban a user.") }
+}
     
 }
 

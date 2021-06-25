@@ -8,5 +8,6 @@ module.exports.run = async(client,msg,args)=>{
 }
 
 module.exports.help={
-   name: "help"
+   name: "help",
+   description:"print help message"   
 }

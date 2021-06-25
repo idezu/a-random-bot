@@ -20,5 +20,6 @@ module.exports.run = async(client,msg,args)=>{
 
 module.exports.help={
    name: "ban",
-   descripion: "ban an user"
+   descripion: "ban an user",
+   usage: "ban {@usersToBan} [reason]"
 }

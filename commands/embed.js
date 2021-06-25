@@ -16,5 +16,7 @@ module.exports.run = async(client,msg,args)=>{
 }
 
 module.exports.help={
-   name: "embed"
+   name: "embed",
+   description: "display an embed with your message",
+   usage: "embed {your message}"
 }

@@ -11,5 +11,6 @@ module.exports.run = async(client,msg,args)=>{
 }
 
 module.exports.help={
-   name: "invite"
+   name: "invite",
+   description: "create an invite for the bot"
 }

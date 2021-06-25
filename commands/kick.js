@@ -16,5 +16,7 @@ module.exports.run = async(client,msg,args)=>{
 }
 
 module.exports.help={
-   name: "kick"
+   name: "kick",
+   descripion: "kick an user",
+   usage: "kick {@usersToKick} [reason]"
 }

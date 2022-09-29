@@ -1,3 +1,7 @@
+/*
+  send a resume of commands in mp of the author of the message
+  */
+
 const Discord = require("discord.js");
 const fs = require("fs");
 

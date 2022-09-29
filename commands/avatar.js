@@ -1,3 +1,7 @@
+/*
+        this command will send the avatar of the invocer of the command
+*/
+
 const Discord = require("discord.js");
 
 module.exports.run = async(client,msg,args)=>{

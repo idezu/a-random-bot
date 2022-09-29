@@ -1,3 +1,6 @@
+/* 
+    just a command to test if the bot work
+*/
 const Discord = require("discord.js");
 const fs = require("fs");
 

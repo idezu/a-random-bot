@@ -12,7 +12,6 @@ the config file look like
   "prefix" : "your prefix"
 }
 
-you have to create it
 */
 const fs = require("fs");
 const { error } = require('console');

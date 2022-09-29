@@ -1,4 +1,4 @@
-some code from Roboliam by Controlfreak707
+some code taken from Roboliam by Controlfreak707
  
 If you wish to add the bot to your own server, [**click here!**]()(soon)
 

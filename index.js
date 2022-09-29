@@ -1,5 +1,5 @@
 // read the config 
-const config = require("config.json");
+const config = require("./config.json");
 var prefix = config.prefix;
 const token = config.token
 
@@ -70,10 +70,6 @@ client.on("ready", () => {
     {
       activity: "Furry YouTubers...",
       type: "WATCHING",
-    },
-    {
-      activity: "beta !!!!!!!!!!!!!",
-      type: "LISTENING",
     }
   ];
   let random = status[Math.floor(Math.random() * Math.floor(status.length))];

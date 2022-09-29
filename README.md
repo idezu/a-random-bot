@@ -10,9 +10,9 @@ If you wish to add the bot to your own server, [**click here!**]()(soon)
 The default prefix is `//`. To see all the commands, say `//help` or mention the bot
 
 # I found a bug!
-it's my first project so i don't know everything in js, it's maybe better to search on internet and submit the patch
+open an issue on github with [bug] in the title
 
 # I've got an idea!
-you can tell it to me but it''s not sure that the next update is for that.
+open an issue on github with [feature] in the title
 
 licenced as mainly in CeCILL

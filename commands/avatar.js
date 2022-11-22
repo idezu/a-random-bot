@@ -5,20 +5,10 @@
 const Discord = require("discord.js");
 
 module.exports.run = async(client,msg,args)=>{
-        
-        let member = msg.mentions.members.first();
-        if (member == "")
-        {
-                const emb=new Discord.MessageEmbed().setImage(member.displayAvatarURL()).setTitle(member.username)
-                msg.channel.send(emb)
-        }
-        else
-        {
-                const emb=new Discord.MessageEmbed().setImage(msg.author.displayAvatarURL()).setTitle(msg.author.username)
-                msg.channel.send(emb)
-        }
-        
- 
+        if (!msg.mentions.members.first()) 
+                msg.channel.send(new Discord.MessageEmbed().setImage(member.displayAvatarURL()).setTitle(member.username));
+        else 
+                msg.channel.send(new Discord.MessageEmbed().setImage(msg.author.displayAvatarURL()).setTitle(msg.author.username)); 
 }
 
 module.exports.help={
